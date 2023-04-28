@@ -22,6 +22,7 @@ public class Program_9 {
         return ans;
     }
 
+  /* 
     private static int findDuplicate(int[] arr){
         int n = arr.length;
         int count = 0;
@@ -36,4 +37,5 @@ public class Program_9 {
         }
         return -1;
     }
+    */
 }

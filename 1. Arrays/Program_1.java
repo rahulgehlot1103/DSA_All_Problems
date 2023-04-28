@@ -2,24 +2,25 @@ import java.util.Scanner;
 
 public class Program_1{
     public static void main(String[] args) {
-        // all about arrays
-        Scanner sc = new Scanner(System.in);
-        int[] arr;  //declaration
-        arr = new int[5];   //intialization
-        
+        try (// all about arrays
+        Scanner sc = new Scanner(System.in)) {
+            int[] arr;  //declaration
+            arr = new int[5];   //intialization
+            
 
-        // taking input from the user
-        for(int i = 0; i < arr.length - 2; i++){
-            arr[i] = sc.nextInt();
+            // taking input from the user
+            for(int i = 0; i < arr.length - 2; i++){
+                arr[i] = sc.nextInt();
+            }
+
+            // printing the values of array
+            printArray(arr);
+
+            // insertion in array
+            
+            insert(arr, 1, 22);
+            printArray(arr);
         }
-
-        // printing the values of array
-        printArray(arr);
-
-        // insertion in array
-        
-        insert(arr, 1, 22);
-        printArray(arr);
     }
 
     static void insert(int[] arr, int pos, int element){

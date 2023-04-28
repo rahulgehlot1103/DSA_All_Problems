@@ -3,7 +3,9 @@ public class Program_23 {
         // Remove duplicates from the array
         int[] arr = {1,1,1,2,2,3,3,3};
        int ans =  removeDuplicates(arr);
-       System.out.println(ans);
+       for(int i = 0; i < ans; i++){
+		System.out.print(arr[i] + " ");
+	}
     }
 
     private static int removeDuplicates(int[] arr) {
